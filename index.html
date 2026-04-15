@@ -33,6 +33,14 @@ body {
 .section-title { font-size: 13px; letter-spacing: 0.15em; font-weight: bold; }
 .section-line { flex: 1; height: 1px; background: #DDD8CE; }
 
+/* 痛点区域 */
+.pain-grid { display: flex; flex-direction: column; gap: 10px; }
+.pain-item {
+  width: 100%; background: #FFFFFF; border: 1px solid #DDD8CE;
+  border-left: 3px solid #C4A060; border-radius: 2px;
+  padding: 16px 20px; font-size: 13px; color: #5A5448; line-height: 1.6;
+}
+
 /* 产品项 */
 .product-item { background: #FFFFFF; border: 1px solid #DDD8CE; border-radius: 2px; margin-bottom: 16px; overflow: hidden; }
 .prod-top { display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #F0EBE0; }
@@ -43,7 +51,7 @@ body {
 .prate-sub { font-size: 9px; color: #A89880; }
 .pdesc { padding: 15px 20px; font-size: 13px; color: #7A7060; line-height: 1.7; background: #FDFAF6; }
 
-/* 核心价值网格 - 手机端单列 */
+/* 核心价值网格 */
 .value-grid { display: flex; flex-direction: column; gap: 12px; }
 .value-item { background: #FFFFFF; border: 1px solid #DDD8CE; border-top: 3px solid #C4A060; padding: 20px; display: flex; gap: 15px; }
 .value-icon { font-family: 'Garamond',serif; font-size: 24px; color: #C4A060; }
@@ -73,7 +81,22 @@ body {
   <div class="hero-label">Private Wealth Management</div>
   <div class="hero-title">让您的资产，<br><span class="gold">在香港生根</span></div>
   <div class="hero-title-en">HONG KONG WUTONG ACHIEVEMENT HOLDINGS CO LIMITED</div>
+  <div class="hero-divider"></div>
   <div class="hero-sub">通过香港合规信托架构，实现资产的稳健增值、合法出海与跨代传承。</div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <span class="section-title">您 可 能 正 面 临 的 问 题</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="pain-grid">
+    <div class="pain-item">境内资产集中，希望有一部分稳健配置在境外</div>
+    <div class="pain-item">已有香港保单，但还没有做系统的信托或传承规划</div>
+    <div class="pain-item">家族财富希望隔离风险，实现有序传承</div>
+    <div class="pain-item">寻找比银行定存收益更优的固收替代方案</div>
+  </div>
 </div>
 
 <div class="section">
@@ -88,7 +111,7 @@ body {
       <div><div class="pname">香港信托 · 固定收益配置</div><div class="pname-en">FIXED INCOME TRUST</div></div>
       <div class="prate"><div class="prate-num">5%</div><div class="prate-sub">目标年化 · 每半年派息</div></div>
     </div>
-    <div class="pdesc">通过香港持牌信托架构，将资金配置于固定收益类资产。与个人资产法律隔离，兼顾稳健收益与资产保护。封闭期3年或7年，起投3,000万港元。</div>
+    <div class="pdesc">通过香港持牌信托架构，将资金配置于固定收益类资产。资产由独立受托人托管，与个人资产法律隔离。封闭期3年或7年，起投3,000万港元。</div>
   </div>
 
   <div class="product-item">
